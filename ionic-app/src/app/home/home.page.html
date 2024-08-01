@@ -1,20 +1,46 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title> Foro#2 DM2 </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">Foro#2 DM2</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <!--String Interpolation para fecha-->
+    <strong> Fecha: </strong>
+    <strong>{{fecha}}</strong>
+    <br />
+    <br />
+    <br />
+    <strong> Numero con formato: </strong>
+    <strong>{{ numero.toFixed(2) }}</strong>
+    <br />
+    <br />
+    <br />
+
+    <strong> Ingrese un nombre:</strong>
+    <br />
+    <br />
+    <ion-input [(ngModel)]="nombreTemporal" class="custom-input" placeholder="Ingresa tu nombre">
+    </ion-input>
+    <br />
+    <ion-button (click)="ingresarNombre()">Ingresar Nombre</ion-button>
+
+    <p>nombre ingresado: <strong>{{ nombre }}</strong></p>
+    <br />
+    <br />
+    <br />
+
+    <strong> Contador:</strong>
+    <strong>{{contador}}</strong>
+    <br />
+    <ion-button (click)="contarMasDos()">Sumar +2</ion-button>
+
   </div>
 </ion-content>

@@ -25,3 +25,21 @@
 #container a {
   text-decoration: none;
 }
+
+.custom-input {
+  --background: white;
+  --border-radius: 8px;  /* Ajusta el radio de los bordes según tus necesidades */
+  --padding-start: 10px; /* Agrega un padding interior para que el texto no esté pegado al borde */
+  --padding-end: 10px;
+  --border-width: 1px;
+  --border-color: #ccc;  /* Color del borde */
+  --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para darle profundidad */
+  --color: black;  /* Color del texto */
+
+
+  /* Añade margen para reducir el tamaño desde las orillas de la pantalla */
+  margin: 0 20px; /* Esto añade un margen de 20px a la izquierda y derecha */
+  
+  /* O establece un ancho específico */
+  width: calc(100% - 40px); /* Hace que el input sea 100% del ancho disponible menos 40px */
+}
